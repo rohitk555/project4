@@ -1,0 +1,30 @@
+class Test 
+{
+	Test()
+	{ 
+		System.out.println(" no argument");
+	}
+	Test(int a)
+	{
+     this();
+     System.out.println(" one argument");	
+	}
+	Test (int a,int b)
+	{
+		this(11);//call its own construtor
+		//this () must be written in first line of constructor 
+
+		System.out.println(" two argument");
+	}
+}
+
+
+public class ConstructorChaining 
+{
+
+	public static void main(String a[])
+	{
+		
+		Test t= new Test(22);//line 15
+	}
+}
