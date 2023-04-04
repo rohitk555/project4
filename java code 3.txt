@@ -1,0 +1,25 @@
+class Person
+{    int code ;
+// no argument constructor 
+Person()       {	this.code=10;}
+
+//parameterized constructor 
+
+Person(int u) {   code=u;  }
+
+Person ( int a,int b){}
+
+}
+public class Construct1 {
+
+	public static void main(String[] args) {
+
+		Person p= new Person();//call line 16 
+		Person p1= new Person(20); //call line 18 
+		Person p2= new Person(30);//call line 18
+		Person p3= new Person(40);//call line 18
+		System.out.println(p.code); 
+		
+	}
+
+}
